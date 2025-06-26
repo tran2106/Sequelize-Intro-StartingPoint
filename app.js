@@ -11,13 +11,6 @@ const PORT = process.env.PORT || 8080;
 // body parser middleware
 app.use(express.json());
 
-// CORS
-// app.use( // only allow requests from our frontend
-//   cors({
-//     origin: process.env.FRONTEND_URL || "http://localhost:3000",
-//     credentials: true,
-//   })
-// );
 app.use(cors()); // allow all origins
 
 app.use(morgan("dev")); // logging middleware
