@@ -60,8 +60,8 @@ const tasks = [
 let nextTaskId = tasks.length + 1;
 
 const users = [
-  { id: 1, name: "John Doe" },
-  { id: 2, name: "Jane Doe" },
+  { id: 1, name: "Finn" },
+  { id: 2, name: "Shahid" },
 ];
 let nextUserId = users.length + 1;
 
