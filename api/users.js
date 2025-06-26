@@ -2,13 +2,13 @@ const express = require("express");
 const router = express.Router();
 const { User } = require("../dummy-database");
 
-// GET /api/owners - Get all owners
+// GET /api/users - Get all users
 router.get("/", (req, res, next) => {
   const users = User.findAll();
   res.json(users);
 });
 
-// GET /api/owners/:id - Get a single owner
+// GET /api/users/:id - Get a single user
 router.get("/:id", (req, res, next) => {
   const user = User.findByPk(req.params.id);
   if (!user) {
@@ -18,7 +18,7 @@ router.get("/:id", (req, res, next) => {
   res.json(user);
 });
 
-// POST /api/owners - Create a new owner
+// POST /api/users - Create a new user
 router.post("/", (req, res, next) => {
   const { name } = req.body;
   const user = User.create({ name });

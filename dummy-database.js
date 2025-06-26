@@ -1,15 +1,45 @@
-// Our dummy database has two tables: tasks and users
+/**
+ * Our dummy database has two tables: tasks and users
+ * You DO NOT need to edit this file. But please do read it, and understand the methods you can use.
+ * For instance, if you want to create a new task, you can do:
+ * const task = Task.create({
+ *   title: "Fold Laundry",
+ *   description: "Fold all the laundry in the laundry room",
+ *   completed: false,
+ *   userId: 1,
+ * });
+ * If you want to delete a task, you can do:
+ * Task.delete(1);
+ */
 
-// Each task has:
-// - id
-// - title
-// - description
-// - completed
-// - userId
+/**
+ * Task.findAll() -> returns all tasks
+ * Task.findByPk(id) -> returns a single task by id
+ * Task.create(task) -> creates a new task
+ * Task.update(id, task) -> updates a task by id
+ * Task.delete(id) -> deletes a task by id
+ *
+ * User.findAll() -> returns all users
+ * User.findByPk(id) -> returns a single user by id
+ * User.create(user) -> creates a new user
+ * User.update(id, user) -> updates a user by id
+ * User.delete(id) -> deletes a user by id
+ */
 
-// Each user has:
-// - id
-// - name
+/**
+ * Each task has:
+ * - id
+ * - title
+ * - description
+ * - completed
+ * - userId
+ */
+
+/**
+ * Each user has:
+ * - id
+ * - name
+ */
 
 const tasks = [
   {
