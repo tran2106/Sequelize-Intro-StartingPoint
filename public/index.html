@@ -3,44 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TTP Backend Template</title>
+    <title>TTP Express Intro</title>
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <h1>Welcome to the TTP Backend Template!</h1>
+    <h1>Welcome to the Express Intro Starting Point!</h1>
     <div class="container">
+      <p>To get started, open the console and type:</p>
+      <pre class="code-block">npm install</pre>
+      <pre class="code-block">npm run start-dev</pre>
       <p>
-        This is a simple backend template for a Tech Talent Pipeline (TTP)
-        project.
-      </p>
-      <p>The database is seeded with some cats to get you started:</p>
-
-      <pre>GET /api/cats -> returns all cats</pre> 
-      <pre class="code-block">
-  [
-    {
-      "id": 1,
-      "name": "Whiskers"
-    },
-    {
-      "id": 2,
-      "name": "Fluffy"
-    },
-    {
-      "id": 3,
-      "name": "Smokey"
-    }
-  ]
-        </pre>
+        This will start the server, and then you can access the API at
+        <a href="http://localhost:8080/api/tasks"
+          >http://localhost:8080/api/tasks</a
+        >
       </p>
       <p>
-        <pre>GET /api/cats/1 -> returns a single cat</pre>
-        <pre class="code-block">
-  {
-    "id": 1,
-    "name": "Whiskers"
-  }
-        </pre>
+        You can start adding your API endpoints to the
+        <code>api/tasks.js</code> and <code>api/users.js</code> files.
       </p>
     </div>
   </body>
