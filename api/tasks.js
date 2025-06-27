@@ -7,8 +7,13 @@ const { Task, User } = require("../database");
 
 // GET all tasks
 router.get("/", async (req, res) => {
-  // Replace this with your code!
-  res.status(501).send("Not implemented");
+  try {
+    const tasks = await Task.findAll();
+    res.send(tasks);
+  } catch (err) {
+    console.log("WE CAUGHT AN ERROR");
+    console.error(err);
+  }
 });
 
 // GET a single task by id

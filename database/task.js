@@ -5,6 +5,9 @@ const db = require("./db");
 const Task = db.define("task", {
   // You should define the following columns:
   // - title: string, required
+  title: {
+    type: DataTypes.STRING,
+  },
   // - description: string, required
   // - completed: boolean, default false
 });
