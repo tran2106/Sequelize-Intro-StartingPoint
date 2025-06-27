@@ -7,14 +7,8 @@ const { Task, User } = require("../database");
 
 // GET all tasks
 router.get("/", async (req, res) => {
-  try {
-    const tasks = await Task.findAll();
-    res.send(tasks);
-  } catch (err) {
-    console.log("WE CAUGHT AN ERROR");
-    console.error(err);
-    res.sendStatus(500);
-  }
+  // replace this with your own code
+  res.sendStatus(501);
 });
 
 // GET a single task by id
@@ -24,18 +18,6 @@ router.get("/", async (req, res) => {
 // Delete a task by id
 
 // Create a new task
-router.post("/", async (req, res) => {
-  try {
-    await Task.create({
-      title: "Deploy to Vercel / Neon",
-    });
-    res.sendStatus(201);
-  } catch (err) {
-    console.log("WE CAUGHT AN ERROR");
-    console.error(err);
-    res.sendStatus(500);
-  }
-});
 
 module.exports = router;
 
