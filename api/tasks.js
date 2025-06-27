@@ -13,6 +13,7 @@ router.get("/", async (req, res) => {
   } catch (err) {
     console.log("WE CAUGHT AN ERROR");
     console.error(err);
+    res.sendStatus(500);
   }
 });
 
@@ -32,6 +33,7 @@ router.post("/", async (req, res) => {
   } catch (err) {
     console.log("WE CAUGHT AN ERROR");
     console.error(err);
+    res.sendStatus(500);
   }
 });
 
