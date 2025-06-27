@@ -23,6 +23,17 @@ router.get("/", async (req, res) => {
 // Delete a task by id
 
 // Create a new task
+router.post("/", async (req, res) => {
+  try {
+    await Task.create({
+      title: "Deploy to Vercel / Neon",
+    });
+    res.sendStatus(201);
+  } catch (err) {
+    console.log("WE CAUGHT AN ERROR");
+    console.error(err);
+  }
+});
 
 module.exports = router;
 
