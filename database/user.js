@@ -5,6 +5,10 @@ const db = require("./db");
 const User = db.define("user", {
   // You should define the following columns:
   // - name: string, required
+  name: {
+    type: DataTypes.STRING,
+    required: true,
+  },
 });
 
 module.exports = User;
